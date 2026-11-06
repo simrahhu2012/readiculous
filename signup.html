@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20382e">
+  <meta name="description" content="Readiculous — a private home for readers and writers.">
+  <title>Readiculous — Create an account</title>
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <main id="app"><section class="auth-wrap"><a class="brand auth-brand" href="index.html"><span class="brand-mark">R.</span><span>readiculous<span class="brand-dot">.</span><small>A HOME FOR THE BOOK-OBSESSED</small></span></a>
+    <div class="auth-card"><div class="eyebrow">YOUR INVITATION AWAITS</div><h1>Join the society.</h1><p>An invitation is needed to create your private membership.</p>
+    <form id="authForm" class="form-stack"><label>Invitation code<input name="invite" required autocomplete="off" placeholder="Paste your invitation code"></label><label>Display name<input name="display" required maxlength="50" placeholder="Your name"></label><label>Username<input name="username" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_]+" placeholder="letters, numbers and _"></label><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>Password<input name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters"></label><button class="button button-full" type="submit">Create my account <span>↗</span></button></form>
+    <p class="auth-switch">Already a member? <a href="login.html">Sign in</a></p><p class="fine-print">Readiculous is a private, invitation-only community. Please keep your invitation code personal.</p></div></section></main>
+  <script type="module" src="js/app.js"></script>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
